@@ -54,4 +54,4 @@ class ListingSerializer(serializers.ModelSerializer):
         return None
 
     def get_total_reviews(self, obj):
-        return obj.r
+        return obj.reviews.count()
